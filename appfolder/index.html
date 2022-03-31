@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Language" content="app">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="app/Countries/countries.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script data-require="angular-translate@*" data-semver="2.5.0"
+  src="https://cdn.rawgit.com/angular-translate/bower-angular-translate/2.5.0/angular-translate.js"></script>
+<script src="appconfig.js"></script>
+<script src="app/utility/httpservice.js"></script>
+<script src="app/Home/homecontroller.js"></script>
+<script src="app/About/aboutcontroller.js"></script>
+<script src="app/Countries/countriescontroller.js"></script>
+
+<body ng-app="myApp">
+  <div class='loaderparent' ng-if='showloader'>
+    <div class='loader'></div>
+  </div>
+  <header class="topnav">
+    <a href="#!home">{{'Home' | translate}}</a>
+    <a href="#!about">{{'About' | translate}}</a>
+    <a href="#!countries">{{'Countries' | translate}}</a>
+    <a ng-click='English()' class='eng'>{{'English' | translate}}</a>
+    <a ng-click='Hindi()' class='eng'>{{'Hindi' | translate}}</a>
+  </header>
+
+
+  <div ng-view></div>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

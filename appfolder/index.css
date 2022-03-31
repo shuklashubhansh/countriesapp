@@ -1,0 +1,13 @@
+.eng{
+    float: right !important;
+    color:gray !important;
+}
+.eng:hover{
+    background:transparent !important;
+    color:black !important;
+    cursor: pointer;
+}
+.eng:active{
+    background:transparent !important;
+    color:black !important;
+}
