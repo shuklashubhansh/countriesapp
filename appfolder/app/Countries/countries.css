@@ -59,9 +59,11 @@ width:90%;
 padding:25px;
 border: none;
 border-bottom:2px solid lightgray;
+transition: 0.5s;
 }
 .searchcountry:focus{
 outline:none;
+border-bottom:2px solid skyblue;
 }
 .parentlist {
 display:flex;
