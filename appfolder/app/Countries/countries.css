@@ -1,6 +1,9 @@
 .topnav {
 background-color: #fff;
 overflow: hidden;
+position: sticky;
+top:0;
+z-index: 1;
 }
 .topnav a {
 float: left;
@@ -55,11 +58,14 @@ animation-iteration-count: infinite;
 animation-duration: 4s;
 }
 .searchcountry {
-width:90%;
+width:-webkit-fill-available;
 padding:25px;
 border: none;
 border-bottom:2px solid lightgray;
 transition: 0.5s;
+position: sticky;
+top:48px;
+z-index:1;
 }
 .searchcountry:focus{
 outline:none;
@@ -88,4 +94,6 @@ transform:Scale(0.95);
 }
 .flags {
     width:30%;
+    float:right;
+    margin:inherit;
 }
